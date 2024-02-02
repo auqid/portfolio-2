@@ -1,0 +1,46 @@
+.navbar{
+    display: flex;
+    background-color: #F3EFF5;
+    border: 1px solid #454955;
+    
+}
+
+.nav-2{
+    margin: 20px;
+    text-decoration: none;
+    font-size: large;
+    
+
+    color: #0D0A0B;
+
+}
+
+.nav-1{
+    margin: 20px;
+    text-decoration: none;
+    font-size: large;
+    color: #0D0A0B;
+    flex:1;
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+    .navbar{
+      
+        flex-wrap: wrap;
+       
+    }
+    .nav-1 , .nav-2 {
+       
+       flex: 1 1 100%;
+       text-align: center;
+
+    }
+  }
+
+
+
+
+
