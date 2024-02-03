@@ -14,12 +14,14 @@
     color: #333333; 
 }
 
+
 .nav-1{
     margin: 20px;
     text-decoration: none;
     font-size: large;
     color: #0D0A0B;
     flex:1;
+    
 
 }
 

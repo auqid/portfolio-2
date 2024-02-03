@@ -8,19 +8,28 @@
     
     width: auto;
     height: auto;
-    margin-bottom: -1rem;
+    margin-bottom: -3rem;
     max-width: 860px;
    
     
 
 }
+
+.bold-text{
+    font-size: 5vw;
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 20px;
+
+    
+}
 .intro-text{
    background-color: blueviolet;
    font-weight: lighter;
-   font-size: 1.2rem;
+   font-size: 2vw;
    color: white;
+   text-align: center;
+   padding:100px
 
-  
-  
-  
 }
+

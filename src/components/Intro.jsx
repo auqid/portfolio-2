@@ -7,8 +7,8 @@ const Intro = () => {
     <div className='container-intro'>
       <img src={hero} className='intro-img'/>
       <p className='intro-text'>
-<span>Hi, I’m Auqid. Nice to meet you.</span> <br/>
-beginning my journey as a Web, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops.
+<span className='bold-text'>Hi, I’m Auqid. Nice to meet you.</span> <br/>
+I am beginning my journey as a Web developer, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops.
 </p>
     </div>
   )
