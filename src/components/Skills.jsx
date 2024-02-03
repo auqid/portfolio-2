@@ -7,7 +7,7 @@ const Skills = () => {
     <>
 <div className='container-skills'>
 
-  <div>
+  <div className='container-item'>
   <img className='container-skills-img'src={code} alt='code logo'/>
   <h1>Full Stack Developer</h1>
   <h3>I like to code things from scratch, and <br/>enjoy  bringing ideas to life in the browser.</h3>
@@ -21,9 +21,8 @@ const Skills = () => {
   <h3>MySQL, MongoDB.</h3>
   </div>
    </div>
-  
-  
-  </>
+
+   </>
   )
 }
 

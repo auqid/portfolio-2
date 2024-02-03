@@ -1,16 +1,21 @@
 .container-skills{
     display: flex;
-    
     justify-content: center;
     text-align: center;
     align-items: center;
     font-size: 20px;
     color: black;
     text-align: center; 
-    
-    
-    
 }
+
+.container-item{
+    border: 2px solid black;
+    padding: 10px;
+    background-color:#ffffff;
+    color:black;
+    border-radius: 5%;
+}
+
 
 .container-skills-img{
     border: 1px solid lightblue;
@@ -23,8 +28,11 @@
 
 h4{
     
-    color: purple;
+    color: rgb(127, 235, 136);
 }
+
+
+
 
 
 
