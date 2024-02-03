@@ -1,0 +1,30 @@
+.container-skills{
+    display: flex;
+    
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+    text-align: center; 
+    
+    
+    
+}
+
+.container-skills-img{
+    border: 1px solid lightblue;
+    
+    max-width: 100px;
+    background-color: greenyellow;
+    border-radius: 50%;
+
+}
+
+h4{
+    
+    color: purple;
+}
+
+
+
