@@ -1,18 +1,17 @@
 .navbar{
     display: flex;
-    background-color: #F3EFF5;
+    
     border: 1px solid #454955;
+    
     
 }
 
 .nav-2{
+    
     margin: 20px;
     text-decoration: none;
     font-size: large;
-    
-
-    color: #0D0A0B;
-
+    color: #333333; 
 }
 
 .nav-1{
@@ -36,7 +35,6 @@
        
        flex: 1 1 100%;
        text-align: center;
-
     }
   }
 
