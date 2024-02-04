@@ -4,7 +4,6 @@ import { ReactTyped } from 'react-typed'
 import { Suspense} from 'react'
 import {Canvas} from '@react-three/fiber'
 import { Environment, OrbitControls } from '@react-three/drei'
-import Scene from './Scene'
 import Cube from './Cube'
 
 const Main = () => {
