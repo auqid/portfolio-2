@@ -36,5 +36,25 @@ canvas{
 }
 
 
+@media only screen and (max-width: 768px) {
+    canvas{
+        height: 300px !important;
+    }
+
+    .container-text1{
+        display: inline-block;
+        margin: 20px ;
+    
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+
+
 
 
