@@ -11,9 +11,8 @@ import Contact from './components/Contact'
 function App() {
   return (
     <>
-    <Header/>
-    <Main/>
-  
+  <Header/>
+  <Main/>
   <Intro/>
   <Skills/>
   <Projects/>

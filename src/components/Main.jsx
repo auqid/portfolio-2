@@ -2,6 +2,10 @@ import React from 'react'
 import './main.css'
 import { ReactTyped } from 'react-typed'
 import cube from '../assets/png-transparent-3-by-3-rubik-s-cube-art-t-shirt-rubiks-cube-drawing-color-hand-painted-cube-watercolor-painting-color-splash-hand-thumbnail.png'
+import {useState, Suspense} from 'react'
+import {Canvas} from '@react-three/fiber'
+import { Environment, OrbitControls } from '@react-three/drei'
+import Scene from './Scene'
 
 const Main = () => {
   return (
@@ -23,7 +27,15 @@ const Main = () => {
     </div><br/>
   I design and code beautifully simple things, and I love what I do.
    </p>
-   <img src={cube} alt='cube' className='container-img'/>
+   {/* <img src={cube} alt='cube' className='container-img'/> */}
+   <Canvas>
+    <ambientLight intensity={1.5}/>
+    <OrbitControls enableZoom={false}/>
+    <Suspense fallback={null}>
+      <Scene/>
+    </Suspense>
+    <Environment preset='sunset'/>
+   </Canvas>
    
   
    
