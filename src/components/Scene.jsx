@@ -7,7 +7,7 @@ Source: https://sketchfab.com/3d-models/rubiks-cube-8545a1569bda4023a74b947a0d8e
 Title: Rubik's Cube
 */
 
-import React, { useRef } from 'react'
+import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
