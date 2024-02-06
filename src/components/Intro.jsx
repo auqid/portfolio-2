@@ -4,7 +4,7 @@ import './intro.css'
 
 const Intro = () => {
   return (
-    <div className='container-intro'>
+    <div id='about' className='container-intro'>
       <img src={hero} className='intro-img' alt='intro'/>
       <p className='intro-text'>
 <span className='bold-text'>Hi, I’m Auqid. Nice to meet you.</span> <br/>
