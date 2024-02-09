@@ -31,7 +31,7 @@ const Skills = () => {
 
 <section className="cards">
   <div className="card-team-builder">
-      <h1 className="card-title">Full Stack Developer</h1>
+      <h1 className="card-title">Full Stack Developer.</h1>
       <p className="card-paragraph">I like to code things from scratch, and enjoy  bringing ideas to life in the browser.</p>
       <div className="card-image">
         <img src={bul} alt='builder-logo'/>
@@ -50,15 +50,15 @@ const Skills = () => {
     
     
     <div className="card-karma">
-      <h1 className="card-title">Front End</h1>
-      <p className="card-paragraph">ReactJS, HTML, CSS</p>
+      <h1 className="card-title">Front End.</h1>
+      <p className="card-paragraph">ReactJS, HTML, CSS.</p>
       <div className="card-image">
         <img src={kar} alt='karma-logo'/>
       </div>
     </div>
 
     <div className="card-calculator">
-      <h1 className="card-title">Backend</h1>
+      <h1 className="card-title">Backend.</h1>
       <p className="card-paragraph">Node.js, Express.</p>
       <div className="card-image">
         <img src={cal} alt='calculator-img'/>
