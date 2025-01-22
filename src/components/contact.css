@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,700&display=swap");
 
 * {
-  
   box-sizing: border-box;
 }
 
 .contact {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   position: relative;
-  
+
   background-size: cover;
 }
 
@@ -40,7 +39,7 @@
   line-height: 2;
   height: auto;
   width: 71%;
-  background-color: #8A2BE2;
+  background-color: #8a2be2;
   margin-bottom: 10rem;
 }
 
@@ -64,13 +63,16 @@ fieldset {
 }
 
 .form-field {
-    outline: none;
-    width: 200%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
-    margin-bottom: .9rem;
+  outline: none;
+  width: 200%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  margin-bottom: 0.9rem;
 }
 
-#name, #email, #subject, #message {
+#name,
+#email,
+#subject,
+#message {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   outline: none;
@@ -82,7 +84,8 @@ fieldset {
   padding-bottom: 0.7rem;
 }
 
-textarea, #message {
+textarea,
+#message {
   width: 100%;
   color: #fff;
   overflow: visible;
@@ -98,11 +101,11 @@ textarea, #message {
   letter-spacing: 2.5px;
   font-weight: 700;
   text-transform: uppercase;
-  width: 10px;
+  max-width: 350px;
   height: 60px;
   background-color: #000;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 #form-btn:hover {
@@ -117,7 +120,7 @@ textarea, #message {
   align-items: flex-end;
   justify-content: center;
   padding: 5rem;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .contact-info h3 {
@@ -134,7 +137,7 @@ textarea, #message {
   letter-spacing: 2px;
   line-height: 3rem;
   margin-bottom: 5rem;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   font-weight: bold;
 }
 
@@ -149,45 +152,44 @@ textarea, #message {
   padding-left: 2rem;
   color: #000;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-.fab:hover{
+.fab:hover {
   transform: scale(1.2);
   color: #999;
 }
-
 
 @media screen and (max-width: 960px) {
   .contact-content {
     display: flex;
     flex-direction: column;
   }
-  
+
   .form-field {
     width: 100%;
   }
-  
+
   #form-btn {
     width: 100%;
   }
-  
+
   #form-title {
     margin: 3rem auto;
   }
-  
-  .contact-header{
+
+  .contact-header {
     margin: 5rem 5rem 3rem 5rem;
   }
-  
+
   #co-title {
     font-size: 1rem;
   }
-  
+
   #co-text {
     font-size: 2.5rem;
   }
-  
+
   .contact-form {
     padding: 2.5rem;
   }
@@ -197,31 +199,31 @@ textarea, #message {
   .form-field {
     width: 125%;
   }
-  
+
   #form-title {
     margin: 3rem auto;
   }
-  
+
   #form-btn {
     width: 125%;
   }
-  
-  .contact-header{
+
+  .contact-header {
     margin: 7rem 7rem 3rem 7rem;
   }
-  
+
   .contact-info {
     padding: 5rem;
   }
-  
+
   #co-title {
     font-size: 1rem;
   }
-  
+
   #co-text {
     font-size: 2.5rem;
   }
-  
+
   .contact-form {
     padding: 2.5rem;
   }
@@ -231,12 +233,11 @@ textarea, #message {
   .form-field {
     width: 200%;
   }
-  
+
   #form-btn {
     width: 200%;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -244,43 +245,39 @@ textarea, #message {
     outline: none;
     width: 100px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.09);
-    margin-bottom: .9rem;
-}
+    margin-bottom: 0.9rem;
+  }
 
-.contact-content {
-  display: flex;
-  flex-direction: column;
-}
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+  }
 
-.form-field {
-  width: 100%;
-}
+  .form-field {
+    width: 100%;
+  }
 
-#form-btn {
-  width: 100%;
-}
+  #form-btn {
+    width: 100%;
+  }
 
-#form-title {
-  margin: 3rem auto;
-}
+  #form-title {
+    margin: 3rem auto;
+  }
 
-.contact-header{
-  margin: 5rem 5rem 3rem 5rem;
-}
+  .contact-header {
+    margin: 5rem 5rem 3rem 5rem;
+  }
 
-#co-title {
-  font-size: 1rem;
-}
+  #co-title {
+    font-size: 1rem;
+  }
 
-#co-text {
-  font-size: 2.5rem;
-}
+  #co-text {
+    font-size: 2.5rem;
+  }
 
-.contact-form {
-  padding: 2.5rem;
-}
-
-
-
-
+  .contact-form {
+    padding: 2.5rem;
+  }
 }
