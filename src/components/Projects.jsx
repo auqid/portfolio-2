@@ -52,7 +52,7 @@ const data = [
     demo: "https://hapiklan.com/",
   },
   {
-    id: 6,
+    id: 7,
     image: IMG9,
     title: "Ukreate",
     github: "",
