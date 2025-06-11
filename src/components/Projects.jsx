@@ -10,13 +10,13 @@ import IMG10 from "../assets/femx.png";
 import "./projects.css";
 
 const data = [
-  // {
-  //   id: 2,
-  //   image: IMG4,
-  //   title: "Milespacios",
-  //   github: " ",
-  //   demo: "https://milespacios.com/",
-  // },
+  {
+    id: 2,
+    image: IMG4,
+    title: "Milespacios",
+    github: " ",
+    demo: "https://milespacios-dev-e1738a9ef2f2.herokuapp.com/mexico",
+  },
   {
     id: 3,
     image: IMG5,
@@ -38,13 +38,13 @@ const data = [
     github: "https://github.com/auqid/azshop",
     demo: "https://azshop.onrender.com/",
   },
-  // {
-  //   id: 5,
-  //   image: IMG7,
-  //   title: "LikeNewOnly",
-  //   github: "",
-  //   demo: "https://likenewonly-dev-788d4e524eac.herokuapp.com/",
-  // },
+  {
+    id: 5,
+    image: IMG7,
+    title: "LikeNewOnly",
+    github: "",
+    demo: "https://likenewonly-dev-788d4e524eac.herokuapp.com/",
+  },
   // {
   //   id: 6,
   //   image: IMG8,
@@ -59,13 +59,13 @@ const data = [
     github: "",
     demo: "https://ukreate.com/",
   },
-  // {
-  //   id: 8,
-  //   image: IMG10,
-  //   title: "femx",
-  //   github: "",
-  //   demo: "https://femx-dev-cdcadf58f7bb.herokuapp.com/",
-  // },
+  {
+    id: 8,
+    image: IMG10,
+    title: "femx",
+    github: "",
+    demo: "https://femx-dev-cdcadf58f7bb.herokuapp.com/",
+  },
 ];
 
 const Portfolio = () => {
