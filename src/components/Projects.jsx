@@ -7,6 +7,7 @@ import IMG7 from "../assets/like.png";
 import IMG9 from "../assets/uk.png";
 import IMG10 from "../assets/femx.png";
 import "./projects.css";
+import { trackExternalLink } from "../analytics";
 
 const data = [
   {
@@ -70,6 +71,10 @@ const data = [
 ];
 
 const Portfolio = () => {
+  const handleProjectClick = (url, title) => {
+    trackExternalLink(`${title} - ${url}`);
+  };
+
   return (
     <section id="portfolio">
       <div className="portfolio-header">
@@ -90,7 +95,13 @@ const Portfolio = () => {
                 {/* <a href={github} className="btn" target="blank">
                   Github
                 </a> */}
-                <a href={demo} className="btn btn-primary" target="blank">
+                <a
+                  href={demo}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => handleProjectClick(demo, title)}
+                >
                   Check it out!
                 </a>
               </div>

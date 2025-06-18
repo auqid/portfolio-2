@@ -1,8 +1,14 @@
 import React from "react";
 import "./contact.css";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { trackContactForm } from "../analytics";
 
 const Contact = () => {
+  const handleFormSubmit = (e) => {
+    trackContactForm();
+    // Form will continue with default mailto behavior
+  };
+
   return (
     <div>
       <section id="contact" className="contact">
@@ -18,6 +24,7 @@ const Contact = () => {
               action="mailto:auqidirfan100@gmail.com"
               method="post"
               enctype="text/plain"
+              onSubmit={handleFormSubmit}
             >
               <fieldset>
                 <div className="form-field">

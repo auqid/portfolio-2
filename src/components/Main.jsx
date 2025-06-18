@@ -26,7 +26,8 @@ const Main = () => {
         <br />
       </p>{" "}
       <div className="container-text2">
-        I design and code beautifully simple things, and I love what I do.
+        Transforming ideas into scalable web solutions with 2 years of hands-on
+        experience in modern technologies.
       </div>
       {/* <img src={cube} alt='cube' className='container-img'/> */}
       <Canvas>
@@ -37,6 +38,9 @@ const Main = () => {
         </Suspense>
         <Environment preset="sunset" />
       </Canvas>
+      <div className="container-text2">
+        <p>Let's connect and build something great together!</p>
+      </div>
     </div>
   );
 };
