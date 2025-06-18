@@ -61,21 +61,26 @@ const Contact = () => {
             <h3>Email Me At </h3>
             <a href="mailto:auqidirfan100@gmail.com">
               <p>auqidirfan100@gmail.com</p>
-            </a>
+            </a>{" "}
             <h3>Find Me On </h3>
             <div className="contact-links">
-              <a href="/https://www.linkedin.com/in/auqidirfan/">
+              <a
+                href="https://www.linkedin.com/in/auqidirfan/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-linkedin">
                   <FaLinkedin />
                 </i>
               </a>
-              <a href="/https://www.github.com/auqid">
+              <a
+                href="https://www.github.com/auqid"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-github">
                   <FaGithub />
                 </i>
-              </a>
-              <a href="/">
-                <i className="fab fa-codepen"></i>
               </a>
             </div>
           </div>

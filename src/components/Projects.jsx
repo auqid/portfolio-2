@@ -4,7 +4,6 @@ import IMG4 from "../assets/miles.png";
 import IMG5 from "../assets/viva.png";
 import IMG6 from "../assets/pop.png";
 import IMG7 from "../assets/like.png";
-import IMG8 from "../assets/hapi.png";
 import IMG9 from "../assets/uk.png";
 import IMG10 from "../assets/femx.png";
 import "./projects.css";
@@ -12,13 +11,6 @@ import "./projects.css";
 const data = [
   {
     id: 2,
-    image: IMG4,
-    title: "Milespacios",
-    github: " ",
-    demo: "https://milespacios-dev-e1738a9ef2f2.herokuapp.com/mexico",
-  },
-  {
-    id: 3,
     image: IMG5,
     title: "Vivacity",
     github: " ",
@@ -31,6 +23,21 @@ const data = [
     github: "",
     demo: "https://popnouvelle.com/",
   },
+  {
+    id: 7,
+    image: IMG9,
+    title: "Ukreate",
+    github: "",
+    demo: "https://ukreate.com/",
+  },
+  {
+    id: 3,
+    image: IMG4,
+    title: "Milespacios",
+    github: " ",
+    demo: "https://milespacios-dev-e1738a9ef2f2.herokuapp.com/mexico",
+  },
+
   {
     id: 1,
     image: IMG1,
@@ -52,13 +59,7 @@ const data = [
   //   github: "",
   //   demo: "https://hapiklan.com/",
   // },
-  {
-    id: 7,
-    image: IMG9,
-    title: "Ukreate",
-    github: "",
-    demo: "https://ukreate.com/",
-  },
+
   {
     id: 8,
     image: IMG10,
@@ -71,6 +72,12 @@ const data = [
 const Portfolio = () => {
   return (
     <section id="portfolio">
+      <div className="portfolio-header">
+        <h2 className="portfolio-title">My Portfolio</h2>
+        <p className="portfolio-subtitle">
+          Here are some of the projects I've worked on
+        </p>
+      </div>
       <div className="container portfolio__container">
         {data.map(({ id, image, title, github, demo }) => {
           return (

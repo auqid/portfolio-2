@@ -1,45 +1,102 @@
-.navbar{
-    display: flex;
-    border: 1px solid #454955
-    
-    
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.nav-2{
-    
-    margin: 20px;
-    text-decoration: none;
-    font-size: large;
-    color: #333333; 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
+.nav-2 {
+  margin: 0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
 
-.nav-1{
-    margin: 20px;
-    text-decoration: none;
-    font-size: large;
-    color: #0D0A0B;
-    flex:1;
-    
+.nav-2::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
 
+.nav-2:hover::after {
+  width: 100%;
+}
+
+.nav-2:hover {
+  transform: translateY(-2px);
+}
+
+.nav-1 {
+  margin: 0;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-1:hover {
+  transform: scale(1.05);
+}
+
+.resume-btn {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(238, 90, 36, 0.3);
+}
+
+.resume-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(238, 90, 36, 0.4);
+  background: linear-gradient(45deg, #ee5a24, #ff6b6b);
 }
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    
-    .navbar{
-      
-        flex-wrap: wrap;
-       
-    }
-    .nav-1 , .nav-2 {
-       
-       flex: 1 1 100%;
-       text-align: center;
-    }
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
   }
 
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
 
+  .nav-1,
+  .nav-2 {
+    font-size: 1rem;
+  }
 
-
-
+  .resume-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
