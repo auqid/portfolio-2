@@ -5,7 +5,8 @@ import IMG5 from "../assets/viva.png";
 import IMG6 from "../assets/pop.png";
 import IMG7 from "../assets/like.png";
 import IMG9 from "../assets/uk.png";
-import IMG10 from "../assets/femx.png";
+import IMG10 from "../assets/task.png";
+
 import "./projects.css";
 import { trackExternalLink } from "../analytics";
 
@@ -61,12 +62,19 @@ const data = [
   //   demo: "https://hapiklan.com/",
   // },
 
+  // {
+  //   id: 8,
+  //   image: IMG10,
+  //   title: "femx",
+  //   github: "",
+  //   demo: "https://femx-dev-cdcadf58f7bb.herokuapp.com/",
+  // },
   {
     id: 8,
     image: IMG10,
-    title: "femx",
-    github: "",
-    demo: "https://femx-dev-cdcadf58f7bb.herokuapp.com/",
+    title: "Task Timer Productivity",
+    github: "https://github.com/auqid/timer-fullstack",
+    demo: "https://frontend-production-85ff.up.railway.app/",
   },
 ];
 
