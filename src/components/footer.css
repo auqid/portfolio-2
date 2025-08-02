@@ -3,7 +3,7 @@
   min-height: 120px;
   display: flex;
   justify-content: space-evenly;
-  background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   align-items: center;
   width: 100%;
   padding: 2rem;
@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #667eea, #764ba2, #ff6b6b, #ee5a24);
+  background: linear-gradient(90deg, #606060, #808080, #a0a0a0, #909090);
 }
 
 .logo1 {
@@ -31,7 +31,7 @@
 
 .logo1:hover {
   transform: translateY(-5px) scale(1.1);
-  color: #667eea;
+  color: #a0a0a0;
 }
 
 @media only screen and (max-width: 768px) {
