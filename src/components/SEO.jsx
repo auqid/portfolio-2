@@ -5,8 +5,10 @@ const SEO = ({
   title = "Auqid Irfan - Full Stack Web Developer | React & JavaScript Expert",
   description = "Auqid Irfan - Full Stack Web Developer with 2+ years experience. Expert in React, JavaScript, Node.js. Available for freelance projects and collaborations.",
   keywords = "Auqid Irfan, Auqid, Web Developer, Full Stack Developer, React Developer, JavaScript, Portfolio, Freelancer",
-  image = `${process.env.PUBLIC_URL}/portfolio-preview.jpg`,
-  url = "https://auqid.github.io/portfolio-2/",
+  image = process.env.PUBLIC_URL
+    ? `${process.env.PUBLIC_URL}/logo512.png`
+    : "/logo512.png",
+  url = "https://www.auqid.tech/",
   type = "website",
 }) => {
   return (

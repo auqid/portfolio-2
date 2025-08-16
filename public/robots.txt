@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://auqid.github.io/portfolio-2/sitemap.xml
+Sitemap: https://www.auqid.tech/sitemap.xml
 
 # Allow crawling of important pages
 Allow: /

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: portfolio-2
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npx http-server build -p $PORT -a 0.0.0.0 --proxy http://localhost:$PORT?
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: PUBLIC_URL
+        value: ""
+      - key: GENERATE_SOURCEMAP
+        value: false

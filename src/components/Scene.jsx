@@ -11,7 +11,11 @@ import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF(`${process.env.PUBLIC_URL}/scene.gltf`);
+  // For Render deployment, use relative path or process.env.PUBLIC_URL
+  const gltfPath = process.env.PUBLIC_URL
+    ? `${process.env.PUBLIC_URL}/scene.gltf`
+    : "/scene.gltf";
+  const { nodes, materials } = useGLTF(gltfPath);
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
@@ -54,4 +58,8 @@ export default function Model(props) {
   );
 }
 
-useGLTF.preload(`${process.env.PUBLIC_URL}/scene.gltf`);
+// Preload with the same path logic
+const gltfPath = process.env.PUBLIC_URL
+  ? `${process.env.PUBLIC_URL}/scene.gltf`
+  : "/scene.gltf";
+useGLTF.preload(gltfPath);
