@@ -7,26 +7,51 @@ Source: https://sketchfab.com/3d-models/rubiks-cube-8545a1569bda4023a74b947a0d8e
 Title: Rubik's Cube
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/scene.gltf')
+  const { nodes, materials } = useGLTF(`${process.env.PUBLIC_URL}/scene.gltf`);
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
-        <group position={[-30.446, 65.912, 0.938]} rotation={[2.746, -0.767, 2.555]} scale={48}>
-          <mesh geometry={nodes.Cube_Material004_0.geometry} material={materials['Material.004']} />
-          <mesh geometry={nodes.Cube_Material001_0.geometry} material={materials['Material.001']} />
-          <mesh geometry={nodes.Cube_Material005_0.geometry} material={materials['Material.005']} />
-          <mesh geometry={nodes.Cube_Material003_0.geometry} material={materials['Material.003']} />
-          <mesh geometry={nodes.Cube_Material008_0.geometry} material={materials['Material.008']} />
-          <mesh geometry={nodes.Cube_Material002_0.geometry} material={materials['Material.002']} />
-          <mesh geometry={nodes.Cube_Material006_0.geometry} material={materials['Material.006']} />
+        <group
+          position={[-30.446, 65.912, 0.938]}
+          rotation={[2.746, -0.767, 2.555]}
+          scale={48}
+        >
+          <mesh
+            geometry={nodes.Cube_Material004_0.geometry}
+            material={materials["Material.004"]}
+          />
+          <mesh
+            geometry={nodes.Cube_Material001_0.geometry}
+            material={materials["Material.001"]}
+          />
+          <mesh
+            geometry={nodes.Cube_Material005_0.geometry}
+            material={materials["Material.005"]}
+          />
+          <mesh
+            geometry={nodes.Cube_Material003_0.geometry}
+            material={materials["Material.003"]}
+          />
+          <mesh
+            geometry={nodes.Cube_Material008_0.geometry}
+            material={materials["Material.008"]}
+          />
+          <mesh
+            geometry={nodes.Cube_Material002_0.geometry}
+            material={materials["Material.002"]}
+          />
+          <mesh
+            geometry={nodes.Cube_Material006_0.geometry}
+            material={materials["Material.006"]}
+          />
         </group>
       </group>
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/scene.gltf')
+useGLTF.preload(`${process.env.PUBLIC_URL}/scene.gltf`);
