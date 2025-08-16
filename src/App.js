@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import "./App.css";
@@ -8,6 +9,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import PrivacyModal from "./components/Privacy";
+import SEO from "./components/SEO";
 import { initGA } from "./analytics";
 
 function App() {
@@ -27,16 +29,19 @@ function App() {
   };
 
   return (
-    <>
-      <Header openPrivacyModal={openPrivacyModal} />
-      <Main />
-      <Intro />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-      <PrivacyModal isOpen={isPrivacyModalOpen} onClose={closePrivacyModal} />
-    </>
+    <HelmetProvider>
+      <SEO />
+      <>
+        <Header openPrivacyModal={openPrivacyModal} />
+        <Main />
+        <Intro />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+        <PrivacyModal isOpen={isPrivacyModalOpen} onClose={closePrivacyModal} />
+      </>
+    </HelmetProvider>
   );
 }
 

@@ -1,3 +1,17 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://auqid.github.io/portfolio-2/sitemap.xml
+
+# Allow crawling of important pages
+Allow: /
+Allow: /projects
+Allow: /contact
+Allow: /skills
+
+# Disallow unnecessary files
+Disallow: /static/js/
+Disallow: /static/css/
+Disallow: /*.json$
