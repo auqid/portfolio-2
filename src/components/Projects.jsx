@@ -4,6 +4,7 @@ import IMG4 from "../assets/miles.png";
 import IMG5 from "../assets/viva.png";
 import IMG6 from "../assets/pop.png";
 import IMG7 from "../assets/like.png";
+import IMG8 from "../assets/hapiklan.png"; // Add this line (adjust the file extension if needed)
 import IMG9 from "../assets/uk.png";
 import IMG10 from "../assets/task.png";
 
