@@ -12,35 +12,6 @@ import { trackExternalLink } from "../analytics";
 
 const data = [
   {
-    id: 2,
-    image: IMG5,
-    title: "Vivacity",
-    github: " ",
-    demo: "https://vivacity.studio",
-  },
-  {
-    id: 4,
-    image: IMG6,
-    title: "Pop Nouvelle",
-    github: "",
-    demo: "https://popnouvelle.com/",
-  },
-  {
-    id: 7,
-    image: IMG9,
-    title: "Ukreate",
-    github: "",
-    demo: "https://ukreate.com/",
-  },
-  {
-    id: 3,
-    image: IMG4,
-    title: "Milespacios",
-    github: " ",
-    demo: "https://milespacios-dev-e1738a9ef2f2.herokuapp.com/mexico",
-  },
-
-  {
     id: 1,
     image: IMG1,
     title: "A-Z Shop Using MERN Stack.",
@@ -48,19 +19,49 @@ const data = [
     demo: "https://azshop.onrender.com/",
   },
   {
+    id: 2,
+    image: IMG5,
+    title: "Vivacity",
+    github: " ",
+    demo: "https://vivacity.studio",
+  },
+  {
+    id: 3,
+    image: IMG6,
+    title: "Pop Nouvelle",
+    github: "",
+    demo: "https://popnouvelle.com/",
+  },
+  {
+    id: 4,
+    image: IMG9,
+    title: "Ukreate",
+    github: "",
+    demo: "https://ukreate.com/",
+  },
+  // {
+  //   id: 3,
+  //   image: IMG4,
+  //   title: "Milespacios",
+  //   github: " ",
+  //   demo: "https://milespacios-dev-e1738a9ef2f2.herokuapp.com/mexico",
+  // },
+
+  
+  {
     id: 5,
     image: IMG7,
     title: "LikeNewOnly",
     github: "",
-    demo: "https://likenewonly-dev-788d4e524eac.herokuapp.com/",
+    demo: "https://likenewonly.com/",
   },
-  // {
-  //   id: 6,
-  //   image: IMG8,
-  //   title: "Hapiklan",
-  //   github: "",
-  //   demo: "https://hapiklan.com/",
-  // },
+  {
+    id: 6,
+    image: IMG8,
+    title: "Hapiklan",
+    github: "",
+    demo: "https://hapiklan.com/",
+  },
 
   // {
   //   id: 8,
@@ -69,13 +70,13 @@ const data = [
   //   github: "",
   //   demo: "https://femx-dev-cdcadf58f7bb.herokuapp.com/",
   // },
-  {
-    id: 8,
-    image: IMG10,
-    title: "Task Timer Productivity",
-    github: "https://github.com/auqid/timer-fullstack",
-    demo: "https://frontend-production-85ff.up.railway.app/",
-  },
+  // {
+  //   id: 8,
+  //   image: IMG10,
+  //   title: "Task Timer Productivity",
+  //   github: "https://github.com/auqid/timer-fullstack",
+  //   demo: "https://frontend-production-85ff.up.railway.app/",
+  // },
 ];
 
 const Portfolio = () => {
