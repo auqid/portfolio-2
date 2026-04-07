@@ -13,8 +13,8 @@ const Contact = () => {
     <div>
       <section id="contact" className="contact">
         <div className="contact-header">
-          <h3 id="co-title">Contact Me</h3>
-          <h1 id="co-text">Reach out for a new project or to say hello.</h1>
+          <p id="co-title">Contact</p>
+          <h2 id="co-text">Reach out for a new project or to say hello.</h2>
         </div>
 
         <div className="contact-content">
@@ -23,7 +23,7 @@ const Contact = () => {
             <form
               action="mailto:auqidirfan100@gmail.com"
               method="post"
-              enctype="text/plain"
+              encType="text/plain"
               onSubmit={handleFormSubmit}
             >
               <fieldset>
@@ -33,7 +33,8 @@ const Contact = () => {
                     type="text"
                     id="name"
                     placeholder="Your Name"
-                  ></input>
+                    required
+                  />
                 </div>
                 <div className="form-field">
                   <input
@@ -41,7 +42,8 @@ const Contact = () => {
                     type="email"
                     id="email"
                     placeholder="Your Email"
-                  ></input>
+                    required
+                  />
                 </div>
                 <div className="form-field">
                   <input
@@ -49,45 +51,47 @@ const Contact = () => {
                     type="text"
                     id="subject"
                     placeholder="Subject"
-                  ></input>
+                    required
+                  />
                 </div>
                 <div className="form-field">
                   <textarea
                     name="message"
-                    type="text"
                     id="message"
                     placeholder="Your Message"
-                  ></textarea>
+                    rows="5"
+                    required
+                  />
                 </div>
               </fieldset>
-              <input id="form-btn" type="submit" value="send" />
+              <button id="form-btn" type="submit">
+                Send
+              </button>
             </form>
           </div>
 
           <div className="contact-info">
-            <h3>Email Me At </h3>
+            <h3>Email Me At</h3>
             <a href="mailto:auqidirfan100@gmail.com">
               <p>auqidirfan100@gmail.com</p>
             </a>{" "}
-            <h3>Find Me On </h3>
+            <h3>Find Me On</h3>
             <div className="contact-links">
               <a
                 href="https://www.linkedin.com/in/auqidirfan/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
-                <i className="fab fa-linkedin">
-                  <FaLinkedin />
-                </i>
+                <FaLinkedin className="contact-icon" />
               </a>
               <a
                 href="https://www.github.com/auqid"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
-                <i className="fab fa-github">
-                  <FaGithub />
-                </i>
+                <FaGithub className="contact-icon" />
               </a>
             </div>
           </div>

@@ -31,16 +31,18 @@ function App() {
   return (
     <HelmetProvider>
       <SEO />
-      <>
+      <div className="App" id="top">
         <Header openPrivacyModal={openPrivacyModal} />
-        <Main />
-        <Intro />
-        <Skills />
-        <Projects />
-        <Contact />
+        <main>
+          <Main />
+          <Intro />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
         <Footer />
         <PrivacyModal isOpen={isPrivacyModalOpen} onClose={closePrivacyModal} />
-      </>
+      </div>
     </HelmetProvider>
   );
 }

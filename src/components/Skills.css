@@ -1,207 +1,117 @@
-/* .container-skills{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-size: 20px;
-    color: black;
-    text-align: center; 
+.skills-section {
+  margin: 1rem 1.2rem;
+  padding: 3.2rem 2.2rem;
+  border-radius: 34px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(
+      140deg,
+      rgba(255, 248, 236, 0.92),
+      rgba(253, 239, 215, 0.82)
+    ),
+    radial-gradient(circle at 12% 8%, rgba(31, 106, 112, 0.16), transparent 42%);
+  box-shadow: var(--shadow-soft);
 }
 
-.container-item{
-    border: 2px solid black;
-    padding: 10px;
-    background-color:#ffffff;
-    color:black;
-    border-radius: 5%;
+.skills-header {
+  max-width: 860px;
+  margin: 0 auto 2.2rem;
+  text-align: center;
 }
 
-
-.container-skills-img{
-    border: 1px solid lightblue;
-    
-    max-width: 100px;
-    background-color: greenyellow;
-    border-radius: 50%;
-
+.skills-label {
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--ink-500);
+  font-size: 0.72rem;
+  margin-bottom: 0.8rem;
 }
 
-h4{
-    
-    color: rgb(127, 235, 136);
-} */
+.skills-title {
+  font-size: clamp(1.7rem, 3.2vw, 2.7rem);
+  line-height: 1.2;
+  color: var(--ink-900);
+}
 
 .cards {
-  margin: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  border-radius: 24px;
   padding: 2rem;
+  transition: 260ms ease;
+  border: 1px solid rgba(90, 58, 34, 0.13);
+  box-shadow: 0 10px 24px rgba(104, 61, 32, 0.08);
 }
 
 .card-supervisor {
-  border-radius: 1rem;
-  padding: 2.5rem 3rem;
-  margin-bottom: 3rem;
-  background: linear-gradient(135deg, #3a3a3a 0%, #505050 100%);
-  color: #e0e0e0;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-  border: none;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.card-supervisor::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(90deg, #707070, #909090);
+  background: linear-gradient(140deg, #fcf4e7 0%, #f8ebd8 100%);
 }
 
 .card-team-builder {
-  border-radius: 1rem;
-  padding: 2.5rem 3rem;
-  margin-bottom: 3rem;
-  background: linear-gradient(135deg, #404040 0%, #606060 100%);
-  color: #e0e0e0;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-  border: none;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.card-team-builder::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(90deg, #808080, #a0a0a0);
+  background: linear-gradient(140deg, #fff0dd 0%, #f5e2cb 100%);
 }
 
 .card-karma {
-  border-radius: 1rem;
-  padding: 2.5rem 3rem;
-  margin-bottom: 3rem;
-  background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%);
-  color: #d0d0d0;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-  border: none;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.card-karma::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(90deg, #606060, #808080);
+  background: linear-gradient(140deg, #fff6ea 0%, #f8e9d2 100%);
 }
 
 .card-calculator {
-  border-radius: 1rem;
-  padding: 2.5rem 3rem;
-  margin-bottom: 3rem;
-  background: linear-gradient(135deg, #505050 0%, #707070 100%);
-  color: #e0e0e0;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-  border: none;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
+  background: linear-gradient(140deg, #fdf1df 0%, #f4e1c7 100%);
 }
 
-.card-calculator::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(90deg, #909090, #b0b0b0);
-}
-
-.card-supervisor:hover,
-.card-team-builder:hover,
-.card-karma:hover,
-.card-calculator:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
 }
 
 .card-title {
-  margin: 0 0 1rem 0;
-  font-size: 1.8rem;
-  font-weight: 700;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 0 0 0.7rem;
+  font-size: clamp(1.4rem, 2.1vw, 1.8rem);
+  color: var(--ink-900);
 }
 
 .card-paragraph {
-  margin: 0 0 2rem 0;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  opacity: 0.9;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--ink-700);
+  max-width: 45ch;
 }
 
 .card-image {
-  padding-top: 2rem;
+  margin-top: 1.6rem;
   display: flex;
   justify-content: flex-end;
 }
 
 .card-image img {
-  width: 60px;
-  height: 60px;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
-  transition: transform 0.3s ease;
+  width: 64px;
+  height: 64px;
+  transition: 260ms ease;
 }
 
-.card-image img:hover {
-  transform: scale(1.1) rotate(5deg);
+.skill-card:hover .card-image img {
+  transform: translateY(-2px) rotate(4deg);
 }
 
-@media (min-width: 680px) {
+@media (max-width: 900px) {
   .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin: 4rem auto;
-    max-width: 1200px;
+    grid-template-columns: 1fr;
   }
 }
 
-@media (min-width: 1250px) {
-  .cards {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-      "start mid1 end"
-      "start mid2 end";
-    gap: 2rem;
+@media (max-width: 768px) {
+  .skills-section {
+    margin: 0.9rem;
+    padding: 2.2rem 1.2rem;
   }
 
-  .card-supervisor {
-    grid-area: start;
-    align-self: center;
-  }
-
-  .card-team-builder {
-    grid-area: mid1;
-  }
-
-  .card-karma {
-    grid-area: mid2;
-  }
-
-  .card-calculator {
-    grid-area: end;
-    align-self: center;
+  .skill-card {
+    padding: 1.5rem;
   }
 }

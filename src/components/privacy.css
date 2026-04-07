@@ -1,12 +1,11 @@
-/* Modal Overlay */
 .privacy-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(5px);
+  background: rgba(21, 14, 8, 0.66);
+  backdrop-filter: blur(6px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,26 +14,28 @@
   animation: fadeIn 0.3s ease-out;
 }
 
-/* Modal Content Container */
 .privacy-modal-content {
   position: relative;
   max-width: 800px;
   max-height: 90vh;
   width: 100%;
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 249, 238, 0.98);
+  border: 1px solid rgba(96, 62, 35, 0.18);
+  border-radius: 22px;
+  box-shadow: 0 22px 52px rgba(28, 16, 8, 0.4);
   overflow-y: auto;
   animation: slideUp 0.3s ease-out;
 }
 
-/* Close Button */
 .privacy-modal-close {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(
+    135deg,
+    var(--accent) 0%,
+    var(--accent-deep) 100%
+  );
   color: white;
   border: none;
   width: 40px;
@@ -52,28 +53,27 @@
 
 .privacy-modal-close:hover {
   transform: scale(1.1) rotate(90deg);
-  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  box-shadow: 0 6px 18px rgba(148, 63, 23, 0.42);
 }
 
-/* Privacy Policy Content */
 .privacy-policy {
   padding: 3rem;
-  padding-top: 4rem; /* Account for close button */
+  padding-top: 4rem;
 }
 
 .privacy-policy h2 {
-  color: #667eea;
+  color: var(--ink-900);
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-align: center;
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: linear-gradient(45deg, var(--accent), var(--accent-deep));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .privacy-policy h3 {
-  color: #333;
+  color: var(--ink-900);
   margin: 2rem 0 1rem 0;
   font-size: 1.5rem;
   font-weight: 600;
@@ -81,14 +81,14 @@
 
 .privacy-policy p {
   line-height: 1.8;
-  color: #666;
+  color: var(--ink-700);
   margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1.02rem;
 }
 
 .privacy-policy ul {
   margin-left: 2rem;
-  color: #666;
+  color: var(--ink-700);
   line-height: 1.6;
 }
 
@@ -98,10 +98,9 @@
 }
 
 .privacy-policy strong {
-  color: #333;
+  color: var(--ink-900);
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -122,7 +121,6 @@
   }
 }
 
-/* Responsive design */
 @media screen and (max-width: 768px) {
   .privacy-modal-overlay {
     padding: 1rem;

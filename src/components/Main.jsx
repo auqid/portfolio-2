@@ -8,10 +8,14 @@ import Cube from "./Cube";
 
 const Main = () => {
   return (
-    <div className="container-main">
-      <p className="container-text">
-        <div className="container-text1">
-          <span>I am a </span>
+    <section className="container-main" id="home">
+      <div className="hero-copy">
+        <p className="hero-kicker">Web Developer and Product Builder</p>
+        <h1 className="container-text1">
+          I design and ship thoughtful digital experiences.
+        </h1>
+        <p className="container-text">
+          <span>I am a</span>
           <ReactTyped
             strings={[
               " Full Stack Developer.",
@@ -22,26 +26,36 @@ const Main = () => {
             backSpeed={70}
             loop
           />
+        </p>
+        <p className="container-text2">
+          Transforming ideas into scalable web solutions with 2 years of
+          hands-on experience in modern technologies.
+        </p>
+        <div className="hero-actions">
+          <a href="#portfolio" className="hero-btn hero-btn-primary">
+            Explore Projects
+          </a>
+          <a href="#contact" className="hero-btn hero-btn-secondary">
+            Let&apos;s Collaborate
+          </a>
         </div>
-        <br />
-      </p>{" "}
-      <div className="container-text2">
-        Transforming ideas into scalable web solutions with 2 years of hands-on
-        experience in modern technologies.
       </div>
-      {/* <img src={cube} alt='cube' className='container-img'/> */}
-      <Canvas>
-        <ambientLight intensity={1.5} />
-        <OrbitControls enableZoom={false} />
-        <Suspense fallback={null}>
-          <Cube />
-        </Suspense>
-        <Environment preset="sunset" />
-      </Canvas>
-      <div className="container-text2">
-        <p>Let's connect and build something great together!</p>
+
+      <div className="hero-visual" aria-hidden="true">
+        <Canvas>
+          <ambientLight intensity={1.5} />
+          <OrbitControls enableZoom={false} />
+          <Suspense fallback={null}>
+            <Cube />
+          </Suspense>
+          <Environment preset="sunset" />
+        </Canvas>
       </div>
-    </div>
+
+      <p className="hero-note">
+        Let&apos;s connect and build something meaningful together.
+      </p>
+    </section>
   );
 };
 

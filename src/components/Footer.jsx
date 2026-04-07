@@ -1,44 +1,33 @@
 import React from "react";
 import "./footer.css";
-import { FaLinkedin, FaGithub, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+
 const Footer = () => {
   return (
-    <>
-      <div className="footer">
+    <footer className="footer">
+      <p className="footer-copy">Designed and developed by Auqid Irfan.</p>
+      <div className="footer-links">
         <a
           href="https://www.linkedin.com/in/auqidirfan/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
-          <i className="fa fa-linkedin fa-4x logo1">
-            <FaLinkedin />
-          </i>
+          <FaLinkedin className="logo1" />
         </a>
         <a
           href="https://www.github.com/auqid"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub"
         >
-          <i className="fa fa-github fa-4x logo1">
-            <FaGithub />
-          </i>
+          <FaGithub className="logo1" />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <i className="fa fa-twitter fa-4x logo1">
-            <FaTwitter />
-          </i>
-        </a>
-        <a
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fa fa-youtube fa-4x logo1">
-            <FaYoutube />
-          </i>
+        <a href="mailto:auqidirfan100@gmail.com" aria-label="Email">
+          <FaEnvelope className="logo1" />
         </a>
       </div>
-    </>
+    </footer>
   );
 };
 

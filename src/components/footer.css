@@ -1,12 +1,14 @@
 .footer {
-  height: 15vh;
-  min-height: 120px;
   display: flex;
-  justify-content: space-evenly;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 2rem;
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1.2rem 1.4rem;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background: rgba(255, 248, 236, 0.86);
+  box-shadow: var(--shadow-soft);
   position: relative;
   overflow: hidden;
 }
@@ -15,32 +17,58 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #606060, #808080, #a0a0a0, #909090);
+  left: 1rem;
+  right: 1rem;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(166, 73, 28, 0.2),
+    rgba(31, 106, 112, 0.26),
+    rgba(166, 73, 28, 0.2)
+  );
+}
+
+.footer-copy {
+  font-size: 0.95rem;
+  color: var(--ink-700);
+  font-weight: 500;
+}
+
+.footer-links {
+  display: flex;
+  gap: 0.7rem;
 }
 
 .logo1 {
-  color: #fff;
-  text-decoration: none;
-  font-size: 3rem;
-  transition: all 0.3s ease;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  width: 41px;
+  height: 41px;
+  padding: 0.65rem;
+  border-radius: 50%;
+  color: var(--ink-900);
+  border: 1px solid rgba(91, 61, 37, 0.22);
+  background: rgba(255, 255, 255, 0.65);
+  transition: 220ms ease;
 }
 
 .logo1:hover {
-  transform: translateY(-5px) scale(1.1);
-  color: #a0a0a0;
+  transform: translateY(-2px);
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(
+    135deg,
+    var(--accent) 0%,
+    var(--accent-deep) 100%
+  );
 }
 
 @media only screen and (max-width: 768px) {
   .footer {
+    flex-direction: column;
+    justify-content: center;
     padding: 1rem;
-    min-height: 100px;
   }
 
-  .logo1 {
-    font-size: 2rem;
+  .footer-copy {
+    text-align: center;
   }
 }

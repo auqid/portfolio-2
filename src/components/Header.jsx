@@ -23,24 +23,29 @@ const Header = ({ openPrivacyModal }) => {
 
   return (
     <nav className="navbar">
-      <a href="/" className="nav-1" onClick={scrollToTop}>
-        Auqid Irfan
+      <a href="/" className="nav-brand" onClick={scrollToTop}>
+        <span className="brand-mark" aria-hidden="true">
+          AI
+        </span>
+        <span className="brand-name">Auqid Irfan</span>
       </a>
       <div className="nav-links">
-        <a href="/" className="nav-2" onClick={scrollToTop}>
-          Home
-        </a>
-        <a href="#about" className="nav-2">
+        <a href="#about" className="nav-link">
           About
         </a>
-        <a href="#portfolio" className="nav-2">
-          Portfolio
+        <a href="#skills" className="nav-link">
+          Skills
+        </a>
+        <a href="#portfolio" className="nav-link">
+          Work
         </a>{" "}
-        <a href="#contact" className="nav-2">
+        <a href="#contact" className="nav-link">
           Contact
         </a>{" "}
+      </div>
+      <div className="nav-actions">
         <button
-          className="nav-2 privacy-link"
+          className="nav-link privacy-link"
           onClick={(e) => {
             e.preventDefault();
             openPrivacyModal();

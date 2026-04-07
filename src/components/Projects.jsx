@@ -1,12 +1,10 @@
 import React from "react";
 import IMG1 from "../assets/portfolio1.jpg";
-import IMG4 from "../assets/miles.png";
 import IMG5 from "../assets/viva.png";
 import IMG6 from "../assets/pop.png";
 import IMG7 from "../assets/like.png";
-import IMG8 from "../assets/hapi.png"; // Add this line (adjust the file extension if needed)
+import IMG8 from "../assets/hapi.png";
 import IMG9 from "../assets/uk.png";
-import IMG10 from "../assets/task.png";
 
 import "./projects.css";
 import { trackExternalLink } from "../analytics";
@@ -15,68 +13,45 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: "A-Z Shop Using MERN Stack.",
-    github: "https://github.com/auqid/azshop",
+    title: "A-Z Shop",
+    stack: "MERN Stack",
     demo: "https://azshop.onrender.com/",
   },
   {
     id: 2,
     image: IMG5,
     title: "Vivacity",
-    github: " ",
+    stack: "Brand Website",
     demo: "https://vivacity.studio",
   },
   {
     id: 3,
     image: IMG6,
     title: "Pop Nouvelle",
-    github: "",
+    stack: "E-commerce",
     demo: "https://popnouvelle.com/",
   },
   {
     id: 4,
     image: IMG9,
     title: "Ukreate",
-    github: "",
+    stack: "Product Platform",
     demo: "https://ukreate.com/",
   },
-  // {
-  //   id: 3,
-  //   image: IMG4,
-  //   title: "Milespacios",
-  //   github: " ",
-  //   demo: "https://milespacios-dev-e1738a9ef2f2.herokuapp.com/mexico",
-  // },
-
   {
     id: 5,
     image: IMG7,
     title: "LikeNewOnly",
-    github: "",
+    stack: "Marketplace",
     demo: "https://likenewonly.com/",
   },
   {
     id: 6,
     image: IMG8,
     title: "Hapiklan",
-    github: "",
+    stack: "Campaign Site",
     demo: "https://hapiklan.com/",
   },
-
-  // {
-  //   id: 8,
-  //   image: IMG10,
-  //   title: "femx",
-  //   github: "",
-  //   demo: "https://femx-dev-cdcadf58f7bb.herokuapp.com/",
-  // },
-  // {
-  //   id: 8,
-  //   image: IMG10,
-  //   title: "Task Timer Productivity",
-  //   github: "https://github.com/auqid/timer-fullstack",
-  //   demo: "https://frontend-production-85ff.up.railway.app/",
-  // },
 ];
 
 const Portfolio = () => {
@@ -85,25 +60,28 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio">
+    <section id="portfolio" className="portfolio-section">
       <div className="portfolio-header">
-        <h2 className="portfolio-title">My Portfolio</h2>
+        <p className="portfolio-label">Selected Work</p>
+        <h2 className="portfolio-title">
+          Projects that blend product thinking with engineering craft.
+        </h2>
         <p className="portfolio-subtitle">
-          Here are some of the projects I've worked on
+          Here are a few products and websites I have designed, built, and
+          shipped.
         </p>
       </div>
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo }) => {
+        {data.map(({ id, image, title, stack, demo }) => {
           return (
             <article key={id} className="portfolio_item">
-              <div className="portfolio">
+              <div className="portfolio-media">
                 <img className="portfolio-img" src={image} alt={title} />
               </div>
-              <h3>{title}</h3>
-              <div className="portfolio__item-cta">
-                {/* <a href={github} className="btn" target="blank">
-                  Github
-                </a> */}
+              <div className="portfolio-content">
+                <p className="project-index">{`0${id}`}</p>
+                <h3>{title}</h3>
+                <p className="project-stack">{stack}</p>
                 <a
                   href={demo}
                   className="btn btn-primary"
@@ -111,7 +89,7 @@ const Portfolio = () => {
                   rel="noopener noreferrer"
                   onClick={() => handleProjectClick(demo, title)}
                 >
-                  Check it out!
+                  Visit Live Site
                 </a>
               </div>
             </article>
